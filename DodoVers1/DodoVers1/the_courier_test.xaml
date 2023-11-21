@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DodoVers1.the_courier_test">
+        <ContentPage.Content>
+
+
+        <Grid BackgroundColor="#355573">
+
+            <Grid Grid.Row="0" Margin="0,10,0,0">
+                <StackLayout  Orientation="Vertical" 
+             HorizontalOptions="StartAndExpand" 
+             Margin="30,30" 
+             VerticalOptions="StartAndExpand">
+
+                    <Label Text="Тест на курьера ДОДО!" 
+              TextColor="White"
+              FontFamily="ofont.ru_Airfool.ttf#Airfool"
+              FontSize="54"/>
+
+                    <Label Text="Нужно выбрать один вариант ответа!"
+              TextColor="#f22905"
+              FontFamily="ofont.ru_Airfool.ttf#Airfool"
+              
+              FontSize="20"/>
+
+                    <Label x:Name="lblpreguntita" 
+                     FontFamily="ofont.ru_Airfool.ttf#Airfool"
+              Text="1.Когда в приложении отметишь заказ выданным?" 
+              TextColor="White"
+              HorizontalOptions="Center"
+              VerticalOptions="CenterAndExpand"
+              FontSize="18"/>
+
+                </StackLayout>
+
+
+                <StackLayout Margin="20, 330,20,20">
+                    <Button Text="После того, как передам заказ клиенту и пожелаю приятного апетита" x:Name="btnresp1"
+           BorderColor="#537895"
+           BorderWidth="2"   
+           BackgroundColor="#183250"
+           TextColor="White"
+           CornerRadius="40"
+           Clicked="Button1_Clicked" ></Button>
+
+                    <Button Text="Когда доеду до адреса клиента" x:Name="btnresp2"
+ BorderColor="#537895"
+ BorderWidth="2"   
+ BackgroundColor="#183250"
+           TextColor="White"
+           CornerRadius="40"
+           Clicked="Button2_Clicked" ></Button>
+
+                    <Button Text="После возвращения в пиццерию" x:Name="btnresp3"
+ BorderColor="#537895"
+ BorderWidth="2"   
+ BackgroundColor="#183250"
+           TextColor="White"
+           CornerRadius="40"
+           Clicked="Button3_Clicked" ></Button>
+
+                    <Button Text="Через 59 минут после создания заказа" x:Name="btnresp4"
+           BorderColor="#537895"
+           BorderWidth="2"   
+           BackgroundColor="#183250"
+           TextColor="White"
+           CornerRadius="40"
+           Clicked="Button4_Clicked" ></Button>
+
+                    <StackLayout>
+
+                        <Button Text="Показать Окончательный Результат" x:Name="btnPuntuacion"
+           BorderColor="#FFAE73"
+           BorderWidth="2"
+           BackgroundColor="#FF8100"
+           TextColor="White"
+           CornerRadius="40"
+           Clicked="MostrarAlerta"
+           IsVisible="False">
+                        </Button>
+
+
+                        <Button 
+          BorderColor="#FFAE73"
+          BorderWidth="2"
+          Text="Вернуться к тестам"
+          Clicked = "Back"
+          Margin="0,70"
+          BackgroundColor="#f22905"
+          TextColor="White"
+          CornerRadius="40"
+          HorizontalOptions ="FillAndExpand"  
+          VerticalOptions="Center"/>
+
+                    </StackLayout>
+
+
+
+                </StackLayout>
+
+            </Grid>
+
+
+        </Grid>
+
+
+
+    </ContentPage.Content>
+</ContentPage>
+
+
+

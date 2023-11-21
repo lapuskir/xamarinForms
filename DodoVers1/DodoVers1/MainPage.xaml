@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DodoVers1.MainPage" >
+
+
+
+    <Grid RowDefinitions="*">
+        <Image Source="BackGround.png" Aspect="AspectFill"/>
+    <StackLayout
+                VerticalOptions="Center"
+                Margin="20">
+
+            <Image Source="logododdopizza.png" BackgroundColor="Transparent" Margin="0,30,12,0"/>
+
+            <Label
+                Text="DODO"
+                HorizontalOptions="Center"
+                TextColor="#2A1607"
+                FontSize="65"
+                Margin="0, 0" >
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="Android" Value="MrDodoRounded_Bold.ttf#Mr Dodo"/>
+                </OnPlatform>
+            </Label.FontFamily>
+            </Label>
+
+            <Entry
+                Placeholder="E-mail"
+                Keyboard="Email"
+                x:Name="EmailInput" />
+
+            <Entry
+                Placeholder="Password"
+                IsPassword="true"
+                x:Name="PasswordInput" />
+
+
+            <Button
+                Text="Войти"
+                Clicked="LoginClicked"
+                Margin="60, 40"
+                BackgroundColor="#FF6900"
+                TextColor="White"
+                CornerRadius="40"/>
+
+            <Button
+                Text="Создать Аккаунт"
+                TextColor="#2A1607"
+                HorizontalOptions="Center"
+                BackgroundColor="Transparent"
+                Clicked="SignUpClicked"
+                FontFamily="MrDodoRounded_Bold.ttf#Mr Dodo"/>
+
+    </StackLayout>
+    </Grid>
+</ContentPage>
+
+   

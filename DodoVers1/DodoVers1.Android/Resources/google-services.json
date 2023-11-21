@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "123914383618",
+    "project_id": "dodovers1",
+    "storage_bucket": "dodovers1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123914383618:android:8d2df0fe21c62ffd24921b",
+        "android_client_info": {
+          "package_name": "com.companyname.dodovers1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgcWeZKl6QvU9w5CeV7lnF5XrqGHn3Txo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

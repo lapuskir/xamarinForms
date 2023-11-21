@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DodoVers1.SignUp"
+             xmlns:local ="clr-namespace:DodoVers1.ModelView" >
+
+
+    <ContentPage.Content>
+
+        <Grid RowDefinitions="*">
+            <Image Source="BackGround.png" Aspect="AspectFill"/>
+            <StackLayout
+            VerticalOptions ="Center"
+            Margin="20">
+
+                <Image Source="logododdopizza.png" BackgroundColor="Transparent" Margin="0,30,12,0"/>
+
+                <StackLayout Margin="0, 40" Orientation="Horizontal" HorizontalOptions="Center">
+                
+                <Label Text="создай  свой" TextColor="#2A1607" FontSize="29" Margin="0,25,0,0" FontFamily="ofont.ru_Airfool.ttf#Airfool"/>
+                <Label Text="  аккаунт)" TextColor="#FF6900" FontSize="29" Margin="0,25,0,0" FontFamily="ofont.ru_Airfool.ttf#Airfool"/>
+            </StackLayout>
+
+
+
+            <Entry
+                Placeholder = "E-mail"
+                Keyboard = "Email"
+                x:Name = "EmailInput" />
+
+
+
+            <Entry
+                Placeholder = "Password"
+                IsPassword = "true"
+                x:Name =  "PasswordInput"/>
+
+            <Button
+                Text="Создать аккаунт"
+                Clicked="SignUpClicked"
+                Margin="60, 20"
+                TextColor="White" 
+                CornerRadius="40" 
+                BackgroundColor="#FF6900" 
+                FontFamily="MrDodoRounded_Bold.ttf#Mr Dodo"/>
+
+
+      
+            <Button
+                Text="Я передумал"
+                TextColor="#2A1607"
+                HorizontalOptions="Center"
+                BackgroundColor="Transparent"
+                Clicked="SignOut_ButtonClicked"
+                FontFamily="MrDodoRounded_Bold.ttf#Mr Dodo"/>
+            </StackLayout>
+            </Grid>
+    </ContentPage.Content>
+ </ContentPage>

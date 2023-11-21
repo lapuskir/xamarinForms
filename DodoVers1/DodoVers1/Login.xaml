@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DodoVers1.Login">
+
+    <ContentPage.Content >
+        <Grid >
+        <StackLayout Margin="10,10" 
+            HorizontalOptions="Center">
+
+            <StackLayout Margin="10,23">
+
+
+                <ImageButton  
+                    WidthRequest="370" 
+                    HeightRequest="150" 
+                    Source="DODOKassir.png" 
+                    Clicked = "The_cashiers_test"/>
+                
+                <ImageButton  
+                    WidthRequest="370" 
+                    HeightRequest="150" 
+                    Source="Pizz_maker.png" 
+                    Clicked = "The_pizza_maker_test"/>
+                
+                <ImageButton  
+                    WidthRequest="370" 
+                    HeightRequest="150" 
+                    Source="DODOdeliv.png" 
+                    Clicked = "The_courier_test"/>
+                
+                <ImageButton  
+                    WidthRequest="370" 
+                    HeightRequest="150" 
+                    Source="DODOmanager.png" 
+                    Clicked = "The_managerial_test"/>
+                
+
+            </StackLayout>
+            
+            
+            
+            <StackLayout >
+               
+
+
+                <Button Text="Выйти из аккаунта"
+                BorderColor="#FFAE73"
+                BorderWidth="2"
+                BackgroundColor="#FF6900"
+                TextColor="White"
+                FontFamily="ofont.ru_Airfool.ttf#Airfool"
+                Clicked = "SignOut_ButtonClicked"
+                HorizontalOptions ="FillAndExpand"  
+                VerticalOptions="Center"
+                CornerRadius="40"/>
+                
+            </StackLayout>
+            
+            
+            
+        </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

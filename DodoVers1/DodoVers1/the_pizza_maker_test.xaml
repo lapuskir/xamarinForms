@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DodoVers1.the_pizza_maker_test">
+    <ContentPage.Content>
+
+        <Grid BackgroundColor="#6c345b">
+
+            <Grid Grid.Row="0" Margin="0,10,0,0">
+                <StackLayout  Orientation="Vertical" 
+             HorizontalOptions="StartAndExpand" 
+             Margin="30,30" 
+             VerticalOptions="StartAndExpand">
+
+                    <Label Text="Тест на сроки годности!" 
+              TextColor="White"
+              FontFamily="ofont.ru_Airfool.ttf#Airfool"
+              FontSize="44"/>
+
+                    <Label Text="Нужно выбрать один вариант ответа!"
+              TextColor="#f22905"
+              FontFamily="ofont.ru_Airfool.ttf#Airfool"
+              
+              FontSize="20"/>
+
+                    <Label x:Name="lblpreguntita" 
+                     FontFamily="ofont.ru_Airfool.ttf#Airfool"
+              Text="1. Сроки годности Ветчины от ООО «Агросила. Челны-МПК» После дефростации в закрытой упаковке." 
+              TextColor="White"
+              HorizontalOptions="Center"
+              VerticalOptions="CenterAndExpand"
+              FontSize="18"/>
+
+                </StackLayout>
+
+
+                <StackLayout Margin="20, 280,20,20">
+                    <Button Text="(З): при +2 ⁰С...+6 ⁰С - 72 часа, (О): при +2 ⁰С...+6 ⁰С - 72 часа" x:Name="btnresp1"
+           BorderColor="#5f4d80"
+           BorderWidth="2"   
+           BackgroundColor="#7a1b36"
+           TextColor="White"
+           CornerRadius="40"
+           Clicked="Button1_Clicked" ></Button>
+
+                    <Button Text=" (З): при +2 ⁰С...+6 ⁰С - 48 часа, (О): при +2 ⁰С...+6 ⁰С - 48 часа" x:Name="btnresp2"
+           BorderColor="#5f4d80"
+           BorderWidth="2"   
+           BackgroundColor="#7a1b36"
+           TextColor="White"
+           CornerRadius="40"
+           Clicked="Button2_Clicked" ></Button>
+
+                    <Button Text="(З): при +2 ⁰С...+6 ⁰С - 7 суток, (О): при +2 ⁰С...+6 ⁰С - 7 суток" x:Name="btnresp3"
+           BorderColor="#5f4d80"
+           BorderWidth="2"   
+           BackgroundColor="#7a1b36"
+           TextColor="White"
+           CornerRadius="40"
+           Clicked="Button3_Clicked" ></Button>
+
+                    <Button Text="(З): при +2 ⁰С...+6 ⁰С - 24 часа, (О): при +2 ⁰С...+6 ⁰С - 24 часа" x:Name="btnresp4"
+           BorderColor="#5f4d80"
+           BorderWidth="2"   
+           BackgroundColor="#7a1b36"
+           TextColor="White"
+           CornerRadius="40"
+           Clicked="Button4_Clicked" ></Button>
+
+                    <StackLayout>
+
+                        <Button Text="Показать Окончательный Результат" x:Name="btnPuntuacion"
+           BorderColor="#FFAE73"
+           BorderWidth="2"
+           BackgroundColor="#FF8100"
+           TextColor="White"
+           CornerRadius="40"
+           Clicked="MostrarAlerta"
+           IsVisible="False">
+                        </Button>
+
+
+                        <Button 
+          BorderColor="#FFAE73"
+          BorderWidth="2"
+          Text="Вернуться к тестам"
+          Clicked = "Back"
+          Margin="0,70"
+          BackgroundColor="#f22905"
+          TextColor="White"
+          CornerRadius="40"
+          HorizontalOptions ="FillAndExpand"  
+          VerticalOptions="Center"/>
+
+                    </StackLayout>
+
+
+
+                </StackLayout>
+
+            </Grid>
+
+
+        </Grid>
+
+
+
+    </ContentPage.Content>
+</ContentPage>
+
+
+
